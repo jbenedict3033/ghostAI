@@ -17,4 +17,4 @@ The ghostAI folder contains four folders and two files.<br/>
 The ghostAI project works on Windows operating systems with the following installed:
 - GCC/G++ compiler
 - GNU make
-- SDL 2.0.9 (i686 32-bit with minGW)<br/><br/>
+- SDL 2.0.9 (i686 w64 minGW32)<br/><br/>
