@@ -1,13 +1,5 @@
 # ghostAI
 
-.
-
-.
-
-.
-
-.
-
 ### Summary
 
 ghostAI is an artificial intelligence project. The goal is to design an AI for the ghosts in Pac Man that is superior to the original _Midway_ game. In addition, the ideal AI is both efficient and scalable.
@@ -16,8 +8,16 @@ Right now, a working game has been implemented with an AI that is legitimately e
 
 That said, this project is still underway and will continue to get better over time.
 
+### Deliverables
 
+The ghostAI folder contains four folders and two files.
 
-# Contents
+######Folders
+- _code_          contains all the .cpp and .hpp files written specifically for the project
+- _graphics_      contains .bmp files that the project uses as textures for the background and sprites
+- _levels_        contains .txt files that are translated into level layouts
+- _objects_       empty when downloaded, but holds object files when the associated makefile is used
 
-1. 
+######Files
+- _makefile_      builds the project and drops the executable into the ghostAI folder
+- _SDL2.dll_      contains the SDL2 library required for the project to run
