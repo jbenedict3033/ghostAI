@@ -14,5 +14,7 @@ The ghostAI folder contains four folders and two files.<br/>
 - _makefile_ - builds the project and drops the executable into the ghostAI folder
 - _SDL2.dll_ - contains the SDL2 library required for the project to run<br/>
 ### Requirements
-The ghostAI needs the following to function correctly:
-- s
+The ghostAI project works on Windows operating systems with the following installed:
+- GCC/G++ compiler
+- GNU make
+- SDL 2.0.9 (i686 32-bit with minGW)<br/><br/>
