@@ -15,6 +15,6 @@ The ghostAI folder contains four folders and two files.<br/>
 - _SDL2.dll_ - contains the SDL2 library required for the project to run<br/>
 ### Requirements
 The ghostAI project works on Windows operating systems with the following installed:
-- GCC/G++ compiler
-- GNU make
-- SDL 2.0.9 (i686 w64 minGW32)<br/><br/>
+- mingw 32-bit (SJLJ)
+- SDL 2.0.9 (i686 w64 mingw32)<br/><br/>
+The mingw installer can be found [here](https://osdn.net/projects/mingw/releases/)
