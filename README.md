@@ -1,6 +1,4 @@
-<p align="center">
-  <# ghostAI <br/>>
-</p>
+# <p align="center">ghostAI<br/></p>
 <br/><br/> ### Summary
 
 ghostAI is an artificial intelligence project. The goal is to design an AI for the ghosts in Pac Man that is superior to the original _Midway_ game. In addition, the ideal AI is both efficient and scalable.
