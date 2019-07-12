@@ -1,9 +1,9 @@
 # <p align="center">ghostAI<br/></p>
-### Summary<br/>
+### Summary
 ghostAI is an artificial intelligence project. The goal is to design an AI for the ghosts in Pac Man that is superior to the original _Midway_ game. In addition, the ideal AI is both efficient and scalable.<br/><br/>
 Right now, a working game has been implemented with an AI that is legitimately effective at chasing and trapping a user-controlled Pac Man. However, the game's controls and environment are too different from the original to make a direct comparison. In addition, there are a couple bugs that can unexectedly change how the player moves. There are also possible optimizations in the code. Finally, the code itself could be organized and commented better.<br/><br/>
 That said, this project is still underway and will continue to get better over time.<br/>
-### Deliverables<br/>
+### Deliverables
 The ghostAI folder contains four folders and two files.<br/>
 ###### Folders
 - _code_ - contains all the .cpp and .hpp files written specifically for the project
@@ -15,3 +15,4 @@ The ghostAI folder contains four folders and two files.<br/>
 - _SDL2.dll_ - contains the SDL2 library required for the project to run<br/>
 ### Requirements
 The ghostAI needs the following to function correctly:
+- s
