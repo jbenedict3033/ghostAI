@@ -6,8 +6,8 @@ That said, this project is still underway and will continue to get better over t
 ### Deliverables<br/>
 The ghostAI folder contains four folders and two files.<br/>
 ###### Folders
-- _code_ -        contains all the .cpp and .hpp files written specifically for the project
-- _graphics_      contains .bmp files that the project uses as textures for the background and sprites
+- _code_ - contains all the .cpp and .hpp files written specifically for the project
+- _graphics_ &nbsp; &nbsp; &nbsp;contains .bmp files that the project uses as textures for the background and sprites
 - _levels_        contains .txt files that are translated into level layouts
 - _objects_       empty when downloaded, but holds object files when the associated makefile is used<br/>
 ###### Files
