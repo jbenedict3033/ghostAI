@@ -11,10 +11,10 @@ That said, this project is still underway and will continue to get better over t
 The ghostAI folder contains four folders and two files.
 
 ###### Folders
-- `code` - contains all the .cpp and .hpp files written specifically for the project
-- `graphics` - contains .bmp files that the project uses as textures for the background and sprites
-- `levels` - contains .txt files that are translated into level layouts
-- `objects` - empty when downloaded, but holds object files when the associated makefile is used
+- _code_ - contains all the .cpp and .hpp files written specifically for the project
+- _graphics_ - contains .bmp files that the project uses as textures for the background and sprites
+- _levels_ - contains .txt files that are translated into level layouts
+- _objects_ - empty when downloaded, but holds object files when the associated makefile is used
 
 ###### Files
 - _makefile_ - builds the project and drops the executable into the ghostAI folder
@@ -29,4 +29,4 @@ The mingw installer can be found [here](https://osdn.net/projects/mingw/releases
 The SDL download can be found [here](http://libsdl.org/download-2.0.php "SDL 2.0.9").
 
 ### Instructions
-To build the ghostAI executable, the existing makefile must be altered. The variables 
+To build the ghostAI executable, the existing makefile must be altered. The variables `CPATH1`, `CPATH2`, and `CPATH3` must be changed to the directory of 
