@@ -28,7 +28,7 @@ The ghostAI project runs on Windows operating systems with the following install
 The mingw installer can be found [here](https://osdn.net/projects/mingw/releases/ "mingw Download"). Download `mingw-get-setup.exe` and then follow the guide [here](http://www.mingw.org/wiki/Getting_Started "Getting Started with mingw").
 The SDL download can be found [here](http://libsdl.org/download-2.0.php "SDL 2.0.9").
 
-### Instructions
+### Setup
 To build the ghostAI executable, the existing makefile must be altered:
 ```
 CPATH1 = C:\Users\JBenedict\Documents\6_Essential\Files_Installers
@@ -41,3 +41,7 @@ LPATH2 = \code_blocks\SDL_mingw\SDL2-2.0.9\i686-w64-mingw32\lib
 LPATH = $(LPATH1)$(LPATH2)
 ```
 In the section above, the variables `CPATH1`, `CPATH2`, and `CPATH3` must be changed to the directory of the SDL2 header files, which should look like `i686-w64-mingw32\include\SDL2` at the end. In addition, the variables `LPATH1` and `LPATH2` must be changed to the directory of the SDL2 library files, which should look like `i686-w64-mingw32\lib` at the end.
+
+Once the makefile is altered in this way, navigating to the ghostAI folder in the command prompt and typing `make all` will generate a working executable.
+
+### Hi
