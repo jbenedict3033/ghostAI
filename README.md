@@ -19,5 +19,4 @@ The ghostAI project works on Windows operating systems with the following instal
 * SDL 2.0.9 (i686 w64 mingw32)
 
 The mingw installer can be found [here](https://osdn.net/projects/mingw/releases/). Download `mingw-get-setup.exe` and then follow the guide [here](http://www.mingw.org/wiki/Getting_Started).
-
 The SDL download can be found [here](http://libsdl.org/download-2.0.php).
