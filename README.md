@@ -61,6 +61,8 @@ Some important details to remember:
 - Unlike the original game, Pac Man does **not** get a speed boost for preemptively turning around corners.
 
 ### Features
+
+###### Environment Toggle
 ghostAI features an AI for the ghosts that is based off a combination of Markov Decision Process theory and multi-agent search theory. However, the approach is unique in that the ghosts do not transfer information directly, but use an intermediate, an _environment_ per say. Additionally, the concepts of reward and maximum utility are realized here. Each ghost investigates the environment tiles adjacent to them and heads in the direction with the highest environmental utility (after adjusting for some factors). As a result, the space complexity is reduced because the ghosts do not need to hold information about one another.
 
 To see this environment in action, an optional edit can be made to the file _vision.cpp_ in the _code_ folder. This file contains a constructor for the _vision_ class as follows:
@@ -107,4 +109,6 @@ There are several limitations with this project:
 This may not be an exhaustive list, and will be updated as more limitations become known.
 
 ### Credits
-This project was undertaken individually. However, the code files are based on an open source Pac Man project by [Braden Watling](https://github.com/bradenwatling/Pacman "Pac Man by Braden Watling").
+This project was undertaken individually. However, the code files are inspired by an open source Pac Man project by [Braden Watling](https://github.com/bradenwatling/Pacman "Pac Man by Braden Watling"). Please note, however, that this other project was written using the SDL1 library and did not contain any ghosts whatsoever. Therefore, it made sense for ghostAI to be a separate project instead of a fork.
+
+During the formation of this project, Dr. Jonathan Mwaura from University of Massachusetts Lowell provided insightful feedback and recommendations that steered both the concepts and code in the right direction.
