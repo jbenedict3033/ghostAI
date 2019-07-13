@@ -17,6 +17,6 @@ The ghostAI folder contains four folders and two files.<br/>
 The ghostAI project works on Windows operating systems with the following installed:
 - mingw 32-bit (SJLJ)
 - SDL 2.0.9 (i686 w64 mingw32)<br/>
-``````
+``` ```
 The mingw installer can be found [here](https://osdn.net/projects/mingw/releases/). Download `mingw-get-setup.exe` and then follow the guide [here](http://www.mingw.org/wiki/Getting_Started).<br/>
 The SDL download can be found [here](http://libsdl.org/download-2.0.php).
