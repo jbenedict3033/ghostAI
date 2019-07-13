@@ -61,3 +61,33 @@ Some important details to remember:
 - Unlike the original game, Pac Man does **not** get a speed boost for preemptively turning around corners.
 
 ### Features
+ghostAI features an AI for the ghosts that is based off a combination of Markov Decision Process theory and multi-agent search theory. However, the approach is unique in that the ghosts do not transfer information directly, but use an intermediate, an _environment_ per say. Additionally, the concepts of reward and maximum utility are realized here. Each ghost investigates the environment tiles adjacent to them and heads in the direction with the highest environmental utility (after adjusting for some factors). As a result, the space complexity is reduced because the ghosts do not need to hold information about one another.
+
+To see this environment in action, an optional edit can be made to the file _vision.cpp_ in the _code_ folder. This file contains a constructor for the _vision_ class as follows:
+```
+Vision::Vision(int numLines, int x, int y) {
+    if(SDL_Init(SDL_INIT_AUDIO|SDL_INIT_VIDEO)) {
+        std::cout << "sdl not created\n"; SDL_Quit();
+    }
+
+	screen = SDL_CreateWindow("Ghost Vision", x, y,
+        SDL::SCREEN_WIDTH, SDL::SCREEN_HEIGHT, SDL_WINDOW_HIDDEN);
+    if(!screen) {
+	    std::cout << "failed to create screen\n"; SDL_Quit();
+    }
+    renderer = SDL_CreateRenderer(screen, -1, 0);
+    if(!renderer) {
+        std::cout << "failed to create renderer\n"; SDL_Quit();
+    }
+    SDL_SetRenderDrawColor(renderer, 37, 160, 30, 255);
+    SDL_RenderClear(renderer);
+    SDL_RenderPresent(renderer);
+    map_tex = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_ARGB8888,
+        SDL_TEXTUREACCESS_TARGET, SDL::SCREEN_WIDTH,
+        SDL::SCREEN_HEIGHT);
+	lineCount = numLines;
+	lineLength = LevelReader::lineLength;
+	tile.w = tile.h = TILE_SIZE;
+}
+```
+If the argument `SDL_WINDOW_HIDDEN` in the function SDL_CreateWindow is changed to `0`, a second window will appear after running the executable (after rebuilding the project). This window serves as a GUI for the environment by showing how the ghosts' movement is captured by the environment. Tiles that are more red in color have a lower utility than tiles that are more grey in appearance. Black tiles represent prohibited areas in the map.
