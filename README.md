@@ -90,4 +90,4 @@ Vision::Vision(int numLines, int x, int y) {
 	tile.w = tile.h = TILE_SIZE;
 }
 ```
-If the argument `SDL_WINDOW_HIDDEN` in the function SDL_CreateWindow is changed to `0`, a second window will appear after running the executable (after rebuilding the project). This window serves as a GUI for the environment by showing how the ghosts' movement is captured by the environment. Tiles that are more red in color have a lower utility than tiles that are more grey in appearance. Black tiles represent prohibited areas in the map.
+If the argument `SDL_WINDOW_HIDDEN` in the function `SDL_CreateWindow` is changed to `0`, a second window will appear after running the executable (after rebuilding the project). This window serves as a GUI for the environment by showing how the ghosts' movement is captured by the environment. Tiles that are more red in color have a lower utility than tiles that are less red. Black tiles represent prohibited areas in the map.
