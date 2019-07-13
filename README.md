@@ -94,6 +94,22 @@ Vision::Vision(int numLines, int x, int y) {
 ```
 If the argument `SDL_WINDOW_HIDDEN` in the function `SDL_CreateWindow` is changed to `0`, a second window will appear after running the executable (after rebuilding the project). This window serves as a GUI by showing how the ghosts' movement is captured by the environment. Tiles that are more red in color have a lower utility than tiles that are less red. Black tiles represent prohibited areas in the map.
 
+###### Level Selection
+The project comes with a small number of levels to play. To switch the level, open _main.cpp_ in the _code_ folder and navigate to the following selection:
+```
+/*                  create level and vision gui                   */
+
+	LevelReader lr("levels\\default_level.txt");
+	sdl.initializeSDL(463, 150);
+	Level l = lr.createLevel(sdl);
+	l.drawLevel();
+	l.createVision(0, 150);
+```
+In the constructor for `lr`, replace `default_level.txt` with the name of any other filename in the _levels_ folder. Beware, some levels are harder than others!
+
+###### Time of Survival
+This feature is passive and does not currently turn off. The game tracks how long each program execution lasts. If the user loses the game, his or her total time is displayed in the resulting message box. The time is measured in _ticks_, which vary in length from system to system, but within a certain system, they are a reliable way of measuring progress towards completing a level.
+
 ### Limitations
 There are several limitations with this project:
 - The ghosts' movements can be easier to predict because each ghost is coded identically (as opposed to the original game, which gave each ghost unique "personality traits").
