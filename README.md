@@ -122,6 +122,7 @@ There are several limitations with this project:
 - In very rare cases, either _Blinky_ (the red ghost) or _Clyde_ (the orange ghost) can remain invulnerable even after Pac Man eats a power pellet. This does not include cases where the ghosts leave the center after Pac Man eats the power pellet.
 - There are no _fruits_, which were rewards in the original game.
 - There is no scoring system outside of seeing how long a player can last, or whether they win or not.
+- The console can be seen displaying miscellaneous information in the background during gameplay.
 
 This may not be an exhaustive list, and will be updated as more limitations become known.
 
