@@ -29,4 +29,4 @@ The mingw installer can be found [here](https://osdn.net/projects/mingw/releases
 The SDL download can be found [here](http://libsdl.org/download-2.0.php "SDL 2.0.9").
 
 ### Instructions
-To build the ghostAI executable, the existing makefile must be altered. The variables `CPATH1`, `CPATH2`, and `CPATH3` must be changed to the directory of 
+To build the ghostAI executable, the existing makefile must be altered. In the section below, the variables `CPATH1`, `CPATH2`, and `CPATH3` must be changed to the directory of SDL2, complete with the "i686-w64-mingw32\include\SDL2" at the end:
