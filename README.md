@@ -44,10 +44,13 @@ In the section above, the variables `CPATH1`, `CPATH2`, and `CPATH3` must be cha
 
 Once the makefile is altered in this way, navigating to the ghostAI folder in the command prompt and typing `make all` will generate a working executable.
 
-### Operation
+### Execution
 The executable can be run either by typing `ghostAI.exe` from the command prompt, or by running the file from Windows Explorer. Once the file starts running, a game of Pac Man immediately begins. The game continues running until one of two conditions are met:
 - The game window closes, which causes the console to close as well.
 - A win/loss condition is met in game, in which case a message box appears. Selecting `OK` or closing the message box then closes all windows and the console.
 
 ### Controls
+In the Pac Man game, the user controls the Pac Man character with the arrow keys. `Up` moves Pac Man up, `Down` moves him down, `Right` moves him right, and `Left` moves him left.
 
+### Gameplay
+To win the Pac Man game, the Pac Man character must consume all of the round spheres on the map, which are called _pellets_.
