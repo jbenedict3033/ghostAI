@@ -90,4 +90,19 @@ Vision::Vision(int numLines, int x, int y) {
 	tile.w = tile.h = TILE_SIZE;
 }
 ```
-If the argument `SDL_WINDOW_HIDDEN` in the function `SDL_CreateWindow` is changed to `0`, a second window will appear after running the executable (after rebuilding the project). This window serves as a GUI for the environment by showing how the ghosts' movement is captured by the environment. Tiles that are more red in color have a lower utility than tiles that are less red. Black tiles represent prohibited areas in the map.
+If the argument `SDL_WINDOW_HIDDEN` in the function `SDL_CreateWindow` is changed to `0`, a second window will appear after running the executable (after rebuilding the project). This window serves as a GUI by showing how the ghosts' movement is captured by the environment. Tiles that are more red in color have a lower utility than tiles that are less red. Black tiles represent prohibited areas in the map.
+
+### Limitations
+There are several limitations with this project:
+- The ghosts' movements can be easier to predict because each ghost is coded identically (as opposed to the original game, which gave each ghost unique "personality traits").
+- The characters all move by frame (rather than by pixel in the original game).
+- Pac Man can occasionally stop moving instead of turning, due to both programming bugs and possibly hardware limitations (some keyboards will not register more than 2 pressed down arrow keys at once).
+- There is no level progression system and only one "life" for Pac Man. Once the user beats or loses the level, the game ends.
+- The speed at which the game plays is generally faster than the original game, but can very depending on the system.
+- There is no start menu, so the game starts so suddenly that it catches some users by surprise.
+- In very rare cases, either _Blinky_ (the red ghost) or _Clyde_ (the orange ghost) can remain invulnerable even after Pac Man eats a power pellet. This does not include cases where the ghosts leave the center after Pac Man eats the power pellet.
+- There are no _fruits_, which were rewards in the original game.
+- There is no scoring system outside of seeing how long a player can last, or whether they win or not.
+
+This may not be an exhaustive list, and will be updated as more limitations become known.
+
