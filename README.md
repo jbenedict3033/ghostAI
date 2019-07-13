@@ -53,4 +53,11 @@ The executable can be run either by typing `ghostAI.exe` from the command prompt
 In the Pac Man game, the user controls the Pac Man character with the arrow keys. `Up` moves Pac Man up, `Down` moves him down, `Right` moves him right, and `Left` moves him left.
 
 ### Gameplay
-To win the Pac Man game, the Pac Man character must consume all of the round spheres on the map, which are called _pellets_.
+To win the Pac Man game, the Pac Man character must consume all of the round spheres on the map, which are called _pellets_. While doing so, Pac Man is chased by 4 NPCs called _ghosts_. If a ghost catches Pac Man, the user loses the game. The exception to this rule are the large pellets, called _power pellets_. When Pac Man eats a power pellet, he is invulnerable for a brief period of time and any ghosts he touches are consumed and must regenerate before chasing him again.
+
+Some important details to remember:
+- The characters' movements are restricted to open corridors within the maze. Neither Pac Man nor the ghosts can move through walls. **However**, Pac Man and the ghosts **can** use a two portal system in the middle of the maze to travel from the left edge of the map to the right and vice-versa.
+- When under the effects of a power pellet, Pac Man is **still** vulnerable to ghosts who generate or regenerate (a.k.a. leave the center) **after** the power pellet is consumed.
+- Unlike the original game, Pac Man does **not** get a speed boost for preemptively turning around corners.
+
+### Features
