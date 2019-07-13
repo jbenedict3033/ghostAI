@@ -31,7 +31,6 @@ The SDL download can be found [here](http://libsdl.org/download-2.0.php "SDL 2.0
 ### Instructions
 To build the ghostAI executable, the existing makefile must be altered:
 ```
-
 CPATH1 = C:\Users\JBenedict\Documents\6_Essential\Files_Installers
 CPATH2 = \code_blocks\SDL_mingw\SDL2-2.0.9\i686-w64-mingw32\include
 CPATH3 = \SDL2
@@ -40,6 +39,5 @@ CPATH = $(CPATH1)$(CPATH2)$(CPATH3)
 LPATH1 = C:\Users\JBenedict\Documents\6_Essential\Files_Installers
 LPATH2 = \code_blocks\SDL_mingw\SDL2-2.0.9\i686-w64-mingw32\lib
 LPATH = $(LPATH1)$(LPATH2)
-
 ```
 In the section above, the variables `CPATH1`, `CPATH2`, and `CPATH3` must be changed to the directory of the SDL2 header files, which should look like `i686-w64-mingw32\include\SDL2` at the end. In addition, the variables `LPATH1` and `LPATH2` must be changed to the directory of the SDL2 library files, which should look like `i686-w64-mingw32\lib` at the end.
