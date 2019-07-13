@@ -8,20 +8,21 @@ Right now, a working game has been implemented with an AI that is legitimately e
 That said, this project is still underway and will continue to get better over time.
 
 ### Deliverables
-The ghostAI folder contains four folders and two files.
+The ghostAI folder contains four folders and three files.
 
 ###### Folders
 - _code_ - contains all the .cpp and .hpp files written specifically for the project
 - _graphics_ - contains .bmp files that the project uses as textures for the background and sprites
 - _levels_ - contains .txt files that are translated into level layouts
-- _objects_ - empty when downloaded, but holds object files when the associated makefile is used
+- _objects_ - holds object files for the associated makefile
 
 ###### Files
-- _makefile_ - builds the project and drops the executable into the ghostAI folder
+- _ghostAI.exe_ - executable that runs the game as-is (no special features)
+- _makefile_ - builds and/or cleans the project
 - _SDL2.dll_ - contains the SDL2 library required for the project to run
 
 ### Requirements
-The ghostAI project runs on Windows operating systems with the following installed:
+The ghostAI project builds and runs on Windows operating systems with the following installed:
 - mingw 32-bit (SJLJ)
 - SDL 2.0.9 (i686 w64 mingw32)
 
@@ -29,7 +30,7 @@ The mingw installer can be found [here](https://osdn.net/projects/mingw/releases
 The SDL download can be found [here](http://libsdl.org/download-2.0.php "SDL 2.0.9").
 
 ### Setup
-To build the ghostAI executable, the existing makefile must be altered:
+ghostAI comes with an executable ready to go. However, to rebuild the ghostAI executable, the existing makefile must be altered:
 ```
 CPATH1 = C:\Users\JBenedict\Documents\6_Essential\Files_Installers
 CPATH2 = \code_blocks\SDL_mingw\SDL2-2.0.9\i686-w64-mingw32\include
