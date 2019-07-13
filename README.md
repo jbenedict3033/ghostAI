@@ -46,8 +46,8 @@ Once the makefile is altered in this way, navigating to the ghostAI folder in th
 
 ### Operation
 The executable can be run either by typing `ghostAI.exe` from the command prompt, or by running the file from Windows Explorer. Once the file starts running, a game of Pac Man immediately begins. The game continues running unless
-- a) the game window is closed, at which point both the window and console close, or
-- b) a win/loss condition is met in game, in which case a message box appears. Selecting `OK` or closing the message box then closes all windows and the console.
+- the game window is closed, at which point both the window and console close, or
+- a win/loss condition is met in game, in which case a message box appears. Selecting `OK` or closing the message box then closes all windows and the console.
 
 ### Controls
 
