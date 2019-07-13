@@ -106,3 +106,5 @@ There are several limitations with this project:
 
 This may not be an exhaustive list, and will be updated as more limitations become known.
 
+### Credits
+This project was undertaken individually. However, the code files are based on an open source Pac Man project by [Braden Watling](https://github.com/bradenwatling/Pacman "Pac Man by Braden Watling").
