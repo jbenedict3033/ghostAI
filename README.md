@@ -43,7 +43,7 @@ LPATH = $(LPATH1)$(LPATH2)
 ```
 In the section above, the variables `CPATH1`, `CPATH2`, and `CPATH3` must be changed to the directory of the SDL2 header files, which should look like `i686-w64-mingw32\include\SDL2` at the end. In addition, the variables `LPATH1` and `LPATH2` must be changed to the directory of the SDL2 library files, which should look like `i686-w64-mingw32\lib` at the end.
 
-Once the makefile is altered in this way, navigating to the ghostAI folder in the command prompt and typing `make all` will generate a working executable.
+Once the makefile is altered in this way, navigating to the ghostAI folder in the command prompt and typing `make all` will generate a working executable. Alternatively, typing `make clean` will remove the executable along with all of the object files.
 
 ### Execution
 The executable can be run either by typing `ghostAI.exe` from the command prompt, or by running the file from Windows Explorer. Once the file starts running, a game of Pac Man immediately begins. The game continues running until one of two conditions are met:
