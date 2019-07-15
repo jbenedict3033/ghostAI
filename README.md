@@ -133,5 +133,7 @@ During the formation of this project, Dr. Jonathan Mwaura from University of Mas
 
 ### Copyright
 Copyright Joey Benedict - All Rights Reserved
-Unauthorized copying of this file, via any medium is strictly prohibited
+
+Unauthorized copying of this file, via any medium is strictly prohibited.
+
 Written by Joey Benedict, 2019
