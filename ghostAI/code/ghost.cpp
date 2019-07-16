@@ -12,7 +12,7 @@ themselves.
 
 
 
-/**________________   pre-compiler directives   _________________**//**________________   pre-compiler directives   _________________**/
+/**________________   pre-compiler directives   _________________**/
 
 #include <iostream>
 
