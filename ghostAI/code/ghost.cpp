@@ -27,15 +27,19 @@ themselves.
 
 
 
-/// static variables
+/**______________________   definitions   _______________________**/
+
+/*                      static data members                       */
+
 int Ghost::penTime = 5000;
 SDL_Rect Ghost::insideDoor[2] = { 0 };
 SDL_Rect Ghost::outsideDoor[2] = { 0 };
 std::vector<std::vector<float> > Ghost::wallArray(1);
 
-/// constructor
-Ghost::Ghost(int X, int Y, std::string path, SDL_Renderer* Renderer,
-             int Order) {
+/*                          constructor                           */
+
+Ghost::Ghost(int X, int Y, std::string path,
+    SDL_Renderer* Renderer, int Order) {
     renderer = Renderer;
     order = Order;
     pos.x = spawnPos.x = X;
