@@ -129,7 +129,7 @@ This may not be an exhaustive list, and will be updated as more limitations beco
 ### Credits
 This project was undertaken individually. However, the code files are inspired by an open source Pac Man project by [Braden Watling](https://github.com/bradenwatling/Pacman "Pac Man by Braden Watling"). Please note, however, that this other project was written using the SDL1 library and did not contain any ghosts whatsoever. Therefore, it made sense for ghostAI to be a separate project instead of a fork.
 
-During the formation of this project, Dr. Jonathan Mwaura from University of Massachusetts Lowell provided insightful feedback and recommendations that steered both the concepts and code in the right direction.
+During the formation of this project, Dr. Jonathan Mwaura from the University of Massachusetts Lowell provided insightful feedback and recommendations that steered both the concepts and code in the right direction.
 
 ### Copyright
 Copyright Joey Benedict - All Rights Reserved
