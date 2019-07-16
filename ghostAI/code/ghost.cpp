@@ -1,7 +1,31 @@
-#include <iostream> // used for error messages
+/**=================================================================
+
+                        ghostAI - ghost.cpp
+                           JOEY BENEDICT
+                      ARTIFICIAL INTELLIGENCE
+			   
+This file implements a novel multi-agent search algorithm to the
+ghost NPCs in the game, in addition to creating the ghost objects
+themselves.
+
+=================================================================**/
+
+
+
+/**________________   pre-compiler directives   _________________**/
+
+#include <iostream>
 
 #include "level.hpp"
 #include "ghost.hpp"
+
+
+
+/**______________________   declarations   ______________________**/
+
+/*                      no global variables                       */
+
+
 
 /// static variables
 int Ghost::penTime = 5000;
