@@ -2,7 +2,7 @@
 
                          ghostAI - main.cpp
                            JOEY BENEDICT
-                           COMPUTING IV
+                      ARTIFICIAL INTELLIGENCE
 
 This file is the main driver for the Pac Man game.
 
