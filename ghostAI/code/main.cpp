@@ -13,7 +13,6 @@ This file is the main driver for the Pac Man game.
 /**________________   pre-compiler directives   _________________**/
 
 #include <windows.h>
-#include <iostream>
 #include <sstream>
 
 #include "levelReader.hpp"
